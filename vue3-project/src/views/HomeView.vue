@@ -1,9 +1,15 @@
+<template>
+  <div>
+    <h1>HELLO</h1>
+    <BarChart />
+  </div>
+</template>
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import BarChart from "@/components/BarChart.vue";
+
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style  scoped>
+
+</style>
