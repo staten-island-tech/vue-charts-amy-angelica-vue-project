@@ -2,6 +2,7 @@
   <div>
     <h1>HELLO</h1>
     <BarChart />
+    <PieChart/>
   </div>
 </template>
 
