@@ -1,11 +1,15 @@
 <template>
-  <BarChart />
+  <LineChart />
 </template>
 
 <script>
-
 export default {
   name: 'App',
-  components: { LineChart }
+  components: {
+    Line
+  },
+  data() {
+    return chartConfig
+  }
 }
 </script>
