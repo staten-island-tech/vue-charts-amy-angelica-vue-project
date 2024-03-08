@@ -20,16 +20,28 @@
     data() {
       return {
         chartData: {
-          labels: [ 'January', 'February', 'March', 'Angela' ],
+          labels: [ 'Running', 'Chasing','Climbing','Eating','Foraging','Kuks','Quaas', 'Moans', 'Tail Flags','Tail Twtiches', 'Approaches','Indifferent','Runs from' ],
           datasets: [ { 
             backgroundColor: '#f87979',
-            data: [40, 20, 12, 35] } ]
+            data: [false, true, false, true, true, true, true, true, true, true, true, true, true, true, true] } ]
           
         },
         chartOptions: {
           responsive: true
+        },
+        methods: {
+          async fetchData(){
+          let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
+          let data = await res.json();
+          squirrels.value = data;
+          }
+        },
+        mounted(){
+          this.fetchData
         }
       }
     }
   }
   </script>
+
+  
