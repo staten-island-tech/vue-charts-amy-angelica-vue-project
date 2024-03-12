@@ -1,15 +1,13 @@
 <template>
-    <div>
+   <PieChart/>
+   <div>
+         
 <h1>POJasdfo;jvb;</h1>
     </div>
+   
 </template>
 
 <script>
-    export default {
-        
-    }
+   import PieChart from '@/components/PieChart.vue';
 </script>
 
-<style  scoped>
-
-</style>

@@ -19,11 +19,10 @@ const router = createRouter({
     //   component: () => import('../views/Barview.vue')
     // }
     {
-      path: '/pie',
+      path: '/pieview',
       name: 'piechart',
       component: () => import('../views/PieView.vue')
-      
-    }
+    }    
   ]
 })
 
