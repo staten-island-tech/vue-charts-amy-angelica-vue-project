@@ -3,13 +3,10 @@
 </template>
 
 <script>
+import LineChart from "@/components/Linechart.vue"
+
 export default {
   name: 'App',
-  components: {
-    Line
-  },
-  data() {
-    return chartConfig
-  }
+  components: { LineChart }
 }
 </script>
