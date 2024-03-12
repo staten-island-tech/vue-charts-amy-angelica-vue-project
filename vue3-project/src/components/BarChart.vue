@@ -42,6 +42,30 @@
       }
     }
   }
+const draft = [
+  {
+    poop: true,
+  },
+  {
+    poop: true,
+  },
+  {
+    poop: true,
+  },
+  {
+    poop: true,
+  },
+  {
+    poop: false,
+  },
+]
+function poop(){
+for (let i =0; i > draft.length; i++){
+const add = Number(poop);
+console.log (add === 0);
+console.log (add === 1);
+}}
+poop()
   </script>
 
   
