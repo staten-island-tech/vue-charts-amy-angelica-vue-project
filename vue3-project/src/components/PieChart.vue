@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="pie">
     <Chart id="my-chart-id" :options="chartOptions" :data="chartData" />
   </div>
@@ -32,3 +32,19 @@ export default {
   }
 }
 </script>
+ -->
+ <template>
+  <div>
+    <h1>TEST</h1>
+  </div>
+ </template>
+ 
+ <script>
+  export default {
+    name: 'PieChart'
+  }
+ </script>
+ 
+ <style lang="scss" scoped>
+ 
+ </style>
