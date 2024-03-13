@@ -29,20 +29,10 @@
         chartOptions: {
           responsive: true
         },
-        methods: {
-          async fetchData(){
-          let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
-          let data = await res.json();
-          squirrels.value = data;
-          }
-        },
-        mounted(){
-          this.fetchData
-        }
       }
     }
   }
-const draft = [
+const drafts = [
   {
     poop: true,
   },
@@ -59,13 +49,31 @@ const draft = [
     poop: false,
   },
 ]
-function poop(){
-for (let i =0; i > draft.length; i++){
-const add = Number(poop);
-console.log (add === 0);
-console.log (add === 1);
-}}
-poop()
+let message = 0;
+drafts.forEach(function(draft){
+  if (draft.poop === true){
+    message += Number(draft.poop)
+    return message
+  }
+  console.log(message)
+})
+
+// async function getSquirrel(){
+//   let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
+//   let data = await res.json();
+//   squirrels.value = data;
+// }
+// onBeforeMount(()=> {
+//   getSquirrel();
+// });
+// let message = 0;
+// squirrels.forEach(function(squirrel){
+//   if (squirrel.eating === true){
+//     message += Number(squirrel.eating)
+//     return message
+//   }
+//   console.log(message)
+// })
   </script>
 
   
