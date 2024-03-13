@@ -6,7 +6,7 @@
 import LineChart from "@/components/Linechart.vue"
 
 export default {
-  name: 'App',
+  name: 'LineChart',
   components: { LineChart }
 }
 </script>
