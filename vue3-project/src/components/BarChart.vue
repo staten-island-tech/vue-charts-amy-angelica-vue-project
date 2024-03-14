@@ -23,12 +23,15 @@
           labels: [ 'Running', 'Chasing','Climbing','Eating','Foraging','Kuks','Quaas', 'Moans', 'Tail Flags','Tail Twtiches', 'Approaches','Indifferent','Runs from' ],
           datasets: [ { 
             backgroundColor: '#f87979',
-            data: [false, true, false, true, true, true, true, true, true, true, true, true, true, true, true] } ]
+            data: [bruh(), true, false, true, true, true, true, true, true, true, true, true, true, true, true] } ]
           
         },
         chartOptions: {
           responsive: true
         },
+        methods: {
+
+        }
       }
     }
   }
@@ -49,6 +52,7 @@ const drafts = [
     poop: false,
   },
 ]
+function bruh(){
 let message = 0;
 drafts.forEach(function(draft){
   if (draft.poop === true){
@@ -56,7 +60,7 @@ drafts.forEach(function(draft){
     return message
   }
   console.log(message)
-})
+})}
 
 // async function getSquirrel(){
 //   let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
