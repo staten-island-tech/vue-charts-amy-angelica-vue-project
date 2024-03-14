@@ -1,13 +1,13 @@
 <template>
    
-   <div>
-    <PieChart/>
+   
+    <BarChart/>
       <h1>POJasdfo;jvb;</h1>
-    </div>
+   
    
 </template>
 
 <script>
-   import PieChart from '@/components/PieChart.vue';
+   import BarChart from '@/components/BarChart.vue';
 </script>
 
