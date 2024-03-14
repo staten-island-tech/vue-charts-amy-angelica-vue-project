@@ -1,5 +1,15 @@
 <template>
-  <LineChart />
+  <header>
+
+
+      <nav>
+         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/bar">BarChart</RouterLink> 
+      </nav>
+ 
+  </header>
+
+  <RouterView />
 </template>
 
 <script>
