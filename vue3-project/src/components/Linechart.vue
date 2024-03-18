@@ -1,6 +1,6 @@
 <template>
-  <div class="Line">
-  <Line id="my-chart-id" :options="chartOptions" :data="chartData" />
+  <div>
+  <Line class="Line" id="my-chart-id" :options="chartOptions" :data="chartData" />
 </div>
 </template>
 
@@ -20,8 +20,8 @@ export default {
       chartData: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
-          backgroundColor: '#f87979',
-          data: [40, 39, 10, 40, 39, 80, 40]
+          backgroundColor:  '#85d6ec',
+          data: ['Adult', 'Kid'],
         }
         ]
       },
@@ -31,4 +31,11 @@ export default {
     }
   }
 }
+
 </script>
+<style scoped>
+.Line{
+  width: 1800px;
+  height: 3500px;
+}
+</style>
