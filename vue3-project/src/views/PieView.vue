@@ -2,8 +2,8 @@
     <PieChart/>
 </template>
 
-<script>
-   
+<script setup>
+  import PieChart from '@/components/PieChart.vue'; 
 </script>
 
 <style>

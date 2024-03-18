@@ -1,14 +1,15 @@
 <template>
     <div class="pie">
-      <Chart id="my-chart-ild" 
-      :options="chartOptions" :data="chartData"/>
+      <Pie id="my-chart-id" 
+      :options="chartOptions" 
+      :data="piedata"/>
     </div>
-    <h1>jfds</h1>
   </template>
   
   <script>
-  import { Pie } from 'vue-chartjs'
+
   import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+  import { Pie } from 'vue-chartjs'
   
   ChartJS.register(ArcElement, Tooltip, Legend)
   
@@ -17,11 +18,11 @@
     components: { Pie },
     data() {
       return {
-        Piedata: {
-          labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+        piedata: {
+          labels: ['Gray', 'Cinnamon', 'White', 'AngularJs'],
           datasets: [
             {
-              backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+              backgroundColor: ['#808080', '#E5823b', '#f5f5f5', '#DD1B16'],
               data: [40, 20, 80, 10]
             }
           ]
@@ -34,4 +35,13 @@
   }
   </script>
   
-   
+   <style>
+  .pie{
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  </style>
