@@ -1,6 +1,7 @@
 <template>
   <div class ="bar">
     <Bar
+      
       id="my-chart-id"
       :options="chartOptions"
       :data="chartData"
@@ -27,6 +28,7 @@
             data: array.cart}]
           
         },
+        loaded:false,
         chartOptions: {
           responsive: true
         },
