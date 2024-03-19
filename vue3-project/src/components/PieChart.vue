@@ -19,11 +19,11 @@
     data() {
       return {
         piedata: {
-          labels: ['Gray', 'Cinnamon', 'White', 'AngularJs'],
+          labels: ['Gray', 'Cinnamon', 'White', 'Black'],
           datasets: [
             {
-              backgroundColor: ['#808080', '#E5823b', '#f5f5f5', '#DD1B16'],
-              data: [40, 20, 80, 10]
+              backgroundColor: ['#808080', '#E5823b', '#f5f5f5', '#000000'],
+              data: [3, 20, 80, 10]
             }
           ]
         },
