@@ -21,7 +21,7 @@ export default {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
           backgroundColor:  '#85d6ec',
-          data: ['Adult', 'Kid'],
+          data: [60, 10],
         }
         ]
       },
