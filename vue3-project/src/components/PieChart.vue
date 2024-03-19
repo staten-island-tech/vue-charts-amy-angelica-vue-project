@@ -10,6 +10,7 @@
 
   import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
   import { Pie } from 'vue-chartjs'
+  import { array2 } from '@/stores/store'
   
   ChartJS.register(ArcElement, Tooltip, Legend)
   
@@ -23,10 +24,11 @@
           datasets: [
             {
               backgroundColor: ['#808080', '#E5823b', '#f5f5f5', '#000000'],
-              data: [3, 20, 80, 10]
+              data: array2.cart
             }
           ]
         },
+        loaded: false,
         chartOptions: {
           responsive: true
         }
