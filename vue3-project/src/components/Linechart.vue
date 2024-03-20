@@ -18,10 +18,10 @@ export default {
   data() {
     return {
       chartData: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: [10.5, 10.6, 10.7, 10.8, 10.9,],
         datasets: [{
           backgroundColor:  '#85d6ec',
-          data: [60, 10],
+          data: [10.5, 10.6],
         }
         ]
       },
