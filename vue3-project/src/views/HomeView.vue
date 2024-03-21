@@ -15,20 +15,6 @@ async function getSquirrel(){
   let data = await res.json();
   squirrels.value = data;
 
-  let get_grays = data.filter(squirrel=> squirrel.running === "Gray")
-  let gray = get_grays.length
-  array2.cart[0] = gray
-  let get_cinnamons = data.filter(squirrel=> squirrel.running === "Cinnamon")
-  let cinnamon = get_cinnamons.length
-  array2.cart[1] = cinnamon
-  let get_whites = data.filter(squirrel=> squirrel.running === "White")
-  let white = get_whites.length
-  array2.cart[2] = white
-  let get_blacks = data.filter(squirrel=> squirrel.running === "Black")
-  let black = get_blacks.length
-  array2.cart[3] = black
-
-
 }
 onBeforeMount(()=> {
   getSquirrel();
