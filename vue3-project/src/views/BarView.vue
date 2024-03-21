@@ -11,6 +11,9 @@ async function getSquirrel(){
   let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
   let data = await res.json();
   squirrels.value = data;
+  bruh(data)
+}
+ function bruh(data){
   let runningsquirrels = data.filter(squirrel => squirrel.running === true)
   let run = runningsquirrels.length
   array.cart[0] = run
@@ -61,7 +64,7 @@ async function getSquirrel(){
 
   let runsfrom = data.filter(squirrel => squirrel.runs_from === true)
   let ruuun = runsfrom.length
-  array.cart[12] =ruuun
+   array.cart[12] =ruuun
 }
 onBeforeMount(()=> {
   getSquirrel();
