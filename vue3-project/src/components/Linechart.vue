@@ -1,6 +1,6 @@
 <template>
   <div>
-  <Line class="Line" id="my-chart-id" :options="chartOptions" :data="chartData" />
+  <Line class="Line" id="my-chart-id" :options="chartOptions" :data="linedata" />
 </div>
 </template>
 
@@ -9,6 +9,7 @@
 
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js'
 import { Line } from 'vue-chartjs'
+import { array3 } from '@/stores/store'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
 
@@ -17,16 +18,17 @@ export default {
   components: { Line },
   data() {
     return {
-      chartData: {
-        labels: [10.5, 10.6, 10.7, 10.8, 10.9,],
+      linedata: {
+        labels:['Gray', 'Cinnamon', 'White', 'Black'],
         datasets: [{
           backgroundColor:  '#85d6ec',
-          data: [10.5, 10.6],
+          data:array3.cart,
         }
         ]
       },
+      loaded: false,
       chartOptions: {
-        responsive: false,
+        responsive: true,
       }
     }
   }
