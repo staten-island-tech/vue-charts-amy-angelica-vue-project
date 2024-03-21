@@ -14,12 +14,11 @@ async function getSquirrel(){
   let res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
   let data = await res.json();
   squirrels.value = data;
+
 }
 onBeforeMount(()=> {
   getSquirrel();
-});
-
-
+})
 
 import SquirrelCard from "@/components/SquirrelCard.vue";
 </script>
