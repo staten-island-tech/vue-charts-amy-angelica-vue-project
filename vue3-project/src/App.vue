@@ -5,7 +5,6 @@
       <nav>
          <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/bar">BarChart</RouterLink> 
-        <RouterLink to="/line">LineChart</RouterLink> 
         <RouterLink to="/pie">PieChart</RouterLink>
         <RouterLink to="/line">LineChart</RouterLink>
       </nav>
@@ -16,15 +15,14 @@
 </template>
 
 <script>
-import LineChart from "@/components/Linechart.vue"
-
+import LineChart from './components/Linechart.vue';
 export default {
   name: 'App',
   components: { LineChart }
 }
 </script>
 
-
+<style>
 nav {
   width: 100%;
   font-size: 12px;
