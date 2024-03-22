@@ -17,8 +17,8 @@
     <h2>Approaches: {{ squirrel.approaches }}</h2>
     <h2>Indifferent: {{ squirrel.indifferent }}</h2>
     <h2>Runs From: {{ squirrel.runs_from }}</h2>
-    <div v-if="squirrel.primary_fur_color === null">
-    <h2>N/A</h2>
+    <div v-if="squirrel.primary_fur_color === undefined">
+    <h2>Color: N/A</h2>
   </div>
   <div v-else>
     <h2>Color: {{ squirrel.primary_fur_color }}</h2>

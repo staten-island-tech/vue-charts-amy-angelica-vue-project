@@ -27,6 +27,11 @@ const router = createRouter({
     {  path: '/pie',
       name: 'pie',
       component: () => import('../views/PieView.vue')
+    },
+    {
+      path: '/line',
+      name: 'line',
+      component: () => import('../views/LineView.vue')
     }
   ]
 })
