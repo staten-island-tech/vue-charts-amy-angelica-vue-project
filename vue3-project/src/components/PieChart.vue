@@ -1,12 +1,8 @@
 <template>
-    <div v-if="loaded" class="pie">
+    <div class="pie">
       <Pie id="my-chart-id" 
       :options="chartOptions" 
-      :data="piedata"
-      />
-    </div>
-    <div v-else>
-      <h2>Data is loading...</h2>
+      :data="piedata"/>
     </div>
   </template>
   
@@ -21,9 +17,9 @@
   export default {
     name: 'PieChart',
     components: { Pie },
-    data: () => ({
-      loaded:false,
-      piedata: {
+    data() {
+      return {
+        piedata: {
           labels: ['Gray', 'Cinnamon', 'White', 'Black'],
           datasets: [
             {
@@ -32,33 +28,22 @@
             }
           ]
         },
-    }),
-    async mounted(){
-      this.loaded = false
-      try{
-        const res = await fetch("https://data.cityofnewyork.us/resource/vfnx-vebw.json");
-  let data = await res.json();
-  
-  let get_grays = data.filter(squirrel=> squirrel.primary_fur_color === "Gray")
-  let gray = get_grays.length;
-  array2.cart[0] = gray
-  let get_cinnamons = data.filter(squirrel=> squirrel.primary_fur_color === "Cinnamon")
-  let cinnamon = get_cinnamons.length
-  array2.cart[1] = cinnamon
-  let get_whites = data.filter(squirrel=> squirrel.primary_fur_color === "White")
-  let white = get_whites.length
-  array2.cart[2] = white
-  let get_blacks = data.filter(squirrel=> squirrel.primary_fur_color === "Black")
-  let black = get_blacks.length
-  array2.cart[3] = black
-  this.loaded = true
-      }
-      catch(e){
-        console.error(e)
+        loaded: false,
+        chartOptions: {
+          responsive: true
+        }
       }
     }
   }
-</script>
-
-<style scoped></style>
+  </script>
   
+   <style>
+  .pie{
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  </style>
