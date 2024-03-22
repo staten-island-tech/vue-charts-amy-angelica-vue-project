@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
     <div v-if="loaded" class="pie">
       <Pie id="my-chart-id" 
       :options="chartOptions" 
@@ -8,6 +9,7 @@
     <div v-else>
       <h2>Data is loading...</h2>
     </div>
+  </div>
   </template>
   
   <script>
@@ -60,5 +62,18 @@
   }
 </script>
 
-<style scoped></style>
+<style scoped>
+.pie{
+  height: 1000px;
+  width: 1000px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+</style>
   
