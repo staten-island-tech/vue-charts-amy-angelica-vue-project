@@ -33,4 +33,8 @@ import SquirrelCard from "@/components/SquirrelCard.vue";
   justify-content: space-around;
   
 }
+.title{
+  font-size: 50px;
+  text-align: center;
+}
 </style>
