@@ -8,6 +8,9 @@
 import LineChart from '@/components/LineChart.vue';
 </script>
 
+
 <style scoped>
 
 </style>
+
+
