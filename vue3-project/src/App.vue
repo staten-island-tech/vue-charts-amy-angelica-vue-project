@@ -8,9 +8,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
          <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/bar">BarChart</RouterLink> 
-        <RouterLink to="/pie">PieChart</RouterLink>
-        <RouterLink to="/line">LineChart</RouterLink>
+        <RouterLink to="/bar">Squirrel Behavior</RouterLink> 
+        <RouterLink to="/pie">Squirrel Color in a PieChart</RouterLink>
+        <RouterLink to="/line">Squirrel Color in a LineChart</RouterLink>
       </nav>
  
   </header>
